@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3 class="toc"><a href="toc.html">Table of Contents</a></h3>
+<h2>JavaScript Display Possibilities</h2>
+<p>Data can be "displayed" by JS by writing into an HTML element with <code>innerHTML</code>; writing into the HTML ouput with <code>document.write()</code>, writing into an alert box with <code>window.alert()</code>, or writing into the browser console with <code>console.log()</code>.</p>
+<h3>Using innerHTML</h3>
+<p>To reference the HTML element you want to change, use the <code>document.getElementById(id)</code> method, as demonstrated on the <a href="w3school-java.html">Intro</a> page. The <code>innerHTML</code> property defines the content written to the page.</p>
+<p>Example:</p>
+<div class="sample">
+    <ul style="list-style-type: none;">
+        <li><code>&lt;p&gt;My First Paragraph&lt;/p&gt;</code></li>
+        <li><code> </code></li>
+        <li><code>&lt;p id="demo"&gt;&lt;/p&gt;</code></li>
+        <li><code> </code></li>
+        <li><code>&lt;script&gt;</code></li>
+        <li><code>&nbsp;&nbsp;document.getElementById("demo").innerHTML = 5 + 6;</code></li>
+        <li><code>&lt;/script&gt;</code></li>
+    </ul>
+</div>
+<p>And now, in action...</p>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+<h3>Using document.write()</h3>
+<p>This method is most commonly used for testing purposes. Using <code>document.write()</code> after a page loads will delete all existing HTML.</p>
+<p>Example:</p>
+<div class="sample">
+    <ul style="list-style-type:none">
+        <li><code>&lt;script&gt;</code></li>
+        <li><code>&nbsp;&nbsp;document.write(5 + 6);</code></li>
+        <li><code>&lt;/script&gt;</code></li>
+    </ul>
+</div>
+<p>Now, to see it in action... WARNING: It will overwrite the whole document if you use it after the page has finished loading.</p>
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+<h3>Using window.alert()</h3>
+<p>This code will display an alert box. The "window" keyword is optional.</p>
+<div class="sample">
+    <ul style="list-style-type:none">
+        <li><code>&lt;script&gt;</code></li>
+        <li><code>window.alert(5 + 6);</code></li>
+        <li><code>&lt;/script&gt;</code></li>
+    </ul>
+</div>
+<p>And now the live example... Leaving the code as-is makes the pop-up happen when the page loads.</p>
+<button type="button" onclick="window.alert(5 + 6)">Window alert</button>
+<p>Putting it in a button lets me control when to call it.</p>
+<h3>Using console.log()</h3>
+<p>The console.log() is most often used for debugging purposes. The console is a developer feature (available in most browsers, I'm sure, but specifically in Chrome). You have to have the console open to be able to read the output.</p>
+<div class="sample">
+    <ul style="list-style-type:none">
+        <li><code>&lt;script&gt;</code></li>
+        <li><code>console.log(5 + 6);</code></li>
+        <li><code>&lt;/script&gt;</code></li>
+    </ul>
+</div>
+<h3>JavaScript Print</h3>
+<blockquote>"JavaScript does not have any print object or print methods. You cannot access output devices from JavaScript. The only exception is that you can call the <code>window.print()</code> method in the browser to print the content of the current window."</blockquote>
+<button onclick="window.print()">Print this page</button>
+<div style="display:flex;">
+    <div style="display:flex;margin:auto;"><a href="w3school-java.html" class="nav-link">Java Intro</a></div>
+    <div style="display:flex;margin:auto;"><a href="js-statements.html" class="nav-link">JavaScript Statements</a></div>
+</div>
+</body>
+<footer>
+</footer>
+</html>
