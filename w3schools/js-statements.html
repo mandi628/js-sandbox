@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3 class="toc"><a href="toc.html">Table of Contents</a></h3>
+
+<h2>JavaScript Statements</h2>
+<p>A <strong>computer program</strong> is a list of "instructions" to be "executed" by a computer.</p>
+<p>These programming instructions are called <strong>statements</strong>.</p>
+<p>A <strong>JavaScript program</strong> (or any language) is a list of programming <strong>statements</strong>.</p>
+<p>In HTML, JavaScript programs are executed by the web browser.</p>
+<p>JavaScript statements are made of: values, operators, expressions, keywords, and comments.</p>
+<code>document.getElementById("demo").innerHTML = "Hello Dolly.";</code>
+<p>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo".</p>
+<p>Most programs have many statements. They are executed, one by one, in the same order they are written.</p>
+<p>Semicolons (;) are used to separate statements in JavaScript. Each language uses a different cue as statement separators. <mark>(Python, for example, does not require a separator. CSS also uses semicolons.)</mark></p>
+<div class="sample">
+    <ul style="list-style-type:none;">
+        <li><code>let a, b, c; // Declare 3 variables</code></li>
+        <li><code>a = 5; // Assign the value 5 to a</code></li>
+        <li><code>b = 6; // Assign the value of 6 to b</code></li>
+        <li><code>c = a + b; // Assign the sum of a and b to c.</code></li>
+    </ul>
+</div>
+<p>When separated by semicolons, multiple statements on one line are allowed: <code>a = 5; b = 6; c = a + b;</code></p>
+<p>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable. <mark>(Python also allows while space.)</mark> <code><style="color:blue;">let</style> person = <style="color:red;">"Hege"</style>;</code> is the same as <code><style="color:blue;">let</style> person=<style="color:red;""Hege"</style>;</code>. It is a good practice to put spaces around operators.</p>
+<p>For readability, programmers often like to avoid code lines longer than 80 characters. If it doesn't fit on one line, a good place to break it is after an operator.</p>
+<p>Statements can be grouped together into code blocks, inside curly brackets {...}. Code blocks defines statements that should be executed together. You'll see these inside functions. Standard indentation for code blocks is two spaces. <mark>(Python best practice is four, but there is no requirement.)</mark></p>
+<p>Statements often start with a <strong>keyword</strong> to identify the action to be done. The <a href="https://www.w3schools.com/js/js_reserved.asp">Reserved Words Reference</a> lists all JavaScript keywords. The keywords used in the tutorial are here:</p>
+<div class="sample">
+<table>
+    <tr>
+        <th>Keyword</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>var</code></td>
+        <td>Declares a variable</td>
+    </tr>
+    <tr>
+        <td><code>let</code></td>
+        <td>Declares a block variable</td>
+    </tr>
+    <tr>
+        <td><code>const</code></td>
+        <td>Declares a block constant</td>
+    </tr>
+    <tr>
+        <td><code>if</code></td>
+        <td>Marks a block of statements to be executed on a condition</td>
+    </tr>
+    <tr>
+        <td><code>switch</code></td>
+        <td>Marks a block of statements to be executed in different cases</td>
+    </tr>
+    <tr>
+        <td><code>for</code></td>
+        <td>Marks a block of statements to be executed in a loop</td>
+    </tr>
+    <tr>
+        <td><code>function</code></td>
+        <td>Declares a function</td>
+    </tr>
+    <tr>
+        <td><code>return</code></td>
+        <td>Exits a function</td>
+    </tr>
+    <tr>
+        <td><code>try</code></td>
+        <td>Implements error handling to a block of statements</td>
+    </tr>
+</table>
+</div>
+<div style="display:flex;">
+    <div style="display:flex;margin:auto;"><a href="js-outputs.html" class="nav-link">JavaScript Outputs</a></div>
+    <div style="display:flex;margin:auto;"><a href="toc.html" class="nav-link">Next Part</a></div>
+</div>
+</body>
+<footer>
+</footer>
+</html>
